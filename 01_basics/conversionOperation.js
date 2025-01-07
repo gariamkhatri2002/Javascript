@@ -1,48 +1,72 @@
-let score="garima"
+let value=3;
+let negvalue=-value          //VALUE NEGATIVE
+console.log(negvalue);
 
-console.log(score);           //print value
-console.log(typeof score);    //print data type of value ya variable
+console.log(4+2);       //ADD
+console.log(4-2);       //SUBSTRACT
+console.log(4*2);       //MULTIPLTY
+console.log(4**2);      //POWER
+console.log(4/2);       //DIV
+console.log(4%2);       //MOD
 
-let valueInNumber=Number(score);       //string convert into number
-console.log(typeof valueInNumber);     //type is number
+//ADD STRING
+let string1="Garima"
+let string2=" khatri"
 
-console.log(valueInNumber);        //when string convert into number output is NaN(NOT A NUMBER)
+let string3=string1+string2;
+console.log(string3);          //Garima Khatri
 
-let stringnum="abc2002"
-console.log(stringnum);
+console.log("1"+2);         //12
+console.log(1+"2");         //12
+console.log("1"+2+2);       //122
+console.log(1+2+"2");       //32
 
-
-// "11"=11
-// "ABC11"=NaN(not a none)
-// true=1; false=0
-
-
-//CONVERSION TO BOOLEAN
-let isloggedIn="komal"
-
-let booleanisloggedIn=Boolean(isloggedIn);
-console.log(booleanisloggedIn);       //FALSE
-
-let valuenull=null;
-let nulltobool=Boolean(valuenull);
-console.log(nulltobool);           //false
-
-let emptystr=""
-let emptytoboolean=Boolean(emptystr)
-console.log(emptytoboolean);      //false
+console.log(1+true);                    //2
+console.log("1"+true+null);             //1truenull
+console.log(1+undefined+"2"+true);      //NaN2true        (here 1 + undefined results in NaN (because arithmetic with undefined yields NaN))
+console.log("1"+undefined+"2"+true);    //1undefined2true (here "1" + undefined results in "1undefined" (as undefined is converted to a string).
+console.log(1+null+"2")                 //12        null is object      (Therefore, 1 + null evaluates to 1 + 0, which equals 1)
 
 
+console.log(+true);        //true is converted to a number, it becomes 1 
+console.log(+"");          //The empty string is treated as 0 when converted to a number.
+
+//INCREMENT AND DECREMENT
+let gamecounter=11;
+//postfix
+console.log(gamecounter++);     //Prints 11, then increments gamecounter to 12      output:11
+//prefix
+console.log(++gamecounter);     //first Increment in gamecounter, then prints       output:13
 
 
-// 1=>true ;0=>false
-// ""=>false
-//null=>false
-// "komal"=>true
 
-let someNumber=11
-let stringnumber=String(someNumber)      //number convert into string 
-console.log(stringnumber);               
-console.log(typeof stringnumber);         //STRING
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
