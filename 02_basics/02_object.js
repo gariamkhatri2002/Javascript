@@ -36,24 +36,37 @@ const obj2={3:"c",4:"d"};
 
 
 const obj3=Object.assign({},obj1,obj2);
-console.log(obj1);
-console.log(obj3);                   //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+// console.log(obj1);
+// console.log(obj3);                   //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-console.log(obj3===obj1);           //false
+// console.log(obj3===obj1);           //false
 
 //merge through spread operator
 const obj4={...obj1,...obj2};
 // console.log(obj1);                no change in obj1
 
-console.log(obj4);
+// console.log(obj4);
+
+const user=[
+    {
+        id:"123abc",
+        email:"G@regex.com"
+    },
+    {
+        id:"123abc",
+        email:"G@regex.com"
+    },
+    {
+        id:"123abc",
+        email:"G@regex.com"
+    }
+]
+user[1].email;
+console.log(tinderuser);
+
+console.log(Object.keys(tinderuser));          //retrieve all key of tinderuser as an array
+console.log(Object.values(tinderuser));        
+console.log(Object.entries(tinderuser));       //convert each key and value as array
 
 
-
-
-
-
-
-
-
-
-
+console.log(tinderuser.hasOwnProperty('isloggedin'));      //false
