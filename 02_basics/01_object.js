@@ -30,12 +30,14 @@ console.log(typeof mySym);
 
 
 Jsuser.email="sunita@regex.com";
-// console.log(Jsuser.email);             //sunita@regex.com        reasign value
+// console.log(Jsuser.email);             //sunita@regex.com        reassign value
 
 // Object.freeze(Jsuser);                //after freeze() method can not change the object properties value
 
 Jsuser.email="komal@regex.com",
 // console.log(Jsuser.email);
+console.log(Jsuser);
+
 
 Jsuser.greeting=function(){
     console.log("hello js user");
@@ -46,6 +48,8 @@ Jsuser.greeting_user=function(){
     console.log(`hello js user ${this.name}`);
     
 }
+console.log(Jsuser.greeting);       //[Function (anonymous)]
+ 
 Jsuser.greeting();
 Jsuser.greeting_user();
 
