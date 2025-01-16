@@ -19,10 +19,27 @@ console.log(undefined==0);   //false
 console.log(undefined>0);    //false
 console.log(undefined<0);    //false
 
-//Loose equality (==)
+// //Loose equality (==)
 console.log(null==undefined);   //true(== automatically changes the values being compared to a common type before checking if they are equal.)
 
+//!=
+console.log(8!=8);           //false
 
 //Strict equality (===) 
 
 console.log("2"===2);          //false(the === operator in JavaScript does not change the values being compared)
+
+//!==  not equal value or not equal type
+
+console.log(null!==undefined);        //true
+
+console.log("8"!==8);                 //true
+
+
+//LOGICAL OPERATOR
+let a=5
+let b=8
+console.log(a<b && a==5);        //check both condition are true
+console.log(a>b || a==5);        //check any one condition true
+console.log(!false);            //true
+console.log(!true);             //false
