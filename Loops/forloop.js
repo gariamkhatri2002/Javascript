@@ -1,11 +1,11 @@
 const a=10;
 //give error because we can not change const value
-// for(const i=0;i<a;i++){
-//     console.log(i);
-// }
+for(const i=0;i<a;i++){
+    console.log(i);
+}
 
 for(let i=0;i<a;i++){
-    console.log(i+1);
+    // console.log(i+1);
 }
 
 
@@ -18,7 +18,7 @@ for(let i=x;i<=y;i++){
     
     
 }
-console.log(" "+sum);
+// console.log(" "+sum);
 
 //FOR IN LOOP
 const p={
@@ -38,3 +38,21 @@ for(let a in p){
 for(let b of "garima"){
     console.log(b);
 }
+
+
+
+
+
+let arr=[1,2,3,4,5,6];
+let arr1=arr.filter((value,index)=>{
+    return value<4;
+})
+// console.log(arr);
+// console.log(arr1);
+
+let arr2=arr.reduce((v1,v2)=>{
+    console.log(v1,v2);
+    
+    return v1,v2;
+})
+console.log(arr2);
